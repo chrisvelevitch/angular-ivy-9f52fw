@@ -31,6 +31,7 @@ export class HelloComponent {
   @Input() name: string;
 
   columns = ['Date', 'Text'];
+  dataSource = new ExampleDataSource();
 }
 
 export class ExampleDataSource extends DataSource<PeriodicElement> {
