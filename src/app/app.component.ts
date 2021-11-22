@@ -1,4 +1,4 @@
-import { Component, Input, VERSION } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
 
 export class AppComponent {
   @Component({
@@ -6,6 +6,5 @@ export class AppComponent {
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
   })
-  @Input()
   name: string = 'Angular ' + VERSION.major;
 }

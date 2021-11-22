@@ -28,6 +28,8 @@ const MY_DATA: PeriodicElement[] = [
   styles: [`h1 { font-family: Lato; }`],
 })
 export class HelloComponent {
+  @Input() name: string;
+
   columns = ['Date', 'Text'];
 }
 
