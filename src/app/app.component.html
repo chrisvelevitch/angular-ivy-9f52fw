@@ -1,0 +1,14 @@
+<hello name="{{ name }}"></hello>
+<table mat-table [dataSource]="MY_DATA" matSort>
+  <ng-container matColumnDef="Date">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Date</mat-header-cell>
+    <mat-cell *matCellDef="let row" matToolTip="{{row['date']">{{row['date']}}</mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="Text">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Text</mat-header-cell>
+    <mat-cell *matCellDef="let row" matToolTip="{{row['text']">{{row['text']}}</mat-cell>
+  </ng-container>
+  <mat-header-row *marHeaderRowDef="columns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: columns">
+</ng-container>
+</table>
